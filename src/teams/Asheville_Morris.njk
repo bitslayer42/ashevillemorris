@@ -1,7 +1,7 @@
 ---
 title: Asheville Morris Dancers
 caption: Asheville Morris Dancers
-hero: "../img/AshevilleMorrisLittleSwitzerlandCafe.webp"
+hero: "../img/AshevilleMorrisLittleSwitzerlandCafe_crop.webp"
 icon: "img/Icon_Morris.webp"
 layout: teams
 tags: teams
@@ -10,6 +10,16 @@ descrip: Morris dancing is an English folk tradition. As far back as the 16th ce
 
 {% for item in pictures.morris %}
     {% if item.type == "img" %}
-    <img src="../img/{{ item.value }}">
+        <img src="../img/{{ item.value }}">
+    {% elseif item.type == "txt" %}
+        <article>
+            {% for text in item.value %}
+                <p>{{ text }}</p>
+            {% endfor %}
+        </article>
+    {% elseif item.type == "vid" %}
+         <iframe width="{{ item.width }}" height="{{ item.height }}"
+        src="{{ item.value }}">
+        </iframe>         
     {% endif %}
 {% endfor %}

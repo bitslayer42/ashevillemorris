@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(166, 178, 202);
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+main {
+    width: clamp(200px, 80%, 1200px);
+    margin: auto;
+    display: block;
+    background-color: aliceblue;
+    border: 10px solid white;
+}
+
+header {
+    width: clamp(200px, 100%, 1200px);
+    margin: auto;
+    display: block;
+}
+header h2 {
+    position: absolute;
+    color: white;
+    padding: 25px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-shadow:0 0 6px black;
+}
+article {
+    margin: 25px;
+    padding: 10px;
+}
+
+div.groups {
+    width: 40%;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+    min-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px #ccc;
+    background-color: white;
+    color: black;
+}
+div.groups a {
+    text-decoration: none;
+}
+
+div.groups:hover {
+    background-color: rgb(232, 209, 158); /* New background color on hover */
+    box-shadow: 1px 1px #ccc;
+}
+
+footer {
+    display: block;
+    clear: both;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 5px 5px #ccc;
+    background-color: white;
+    margin: 5px;
+    padding: 2%;
+    font-size: 1.6rem;
+    font-weight: bold;      
+}
+
+img {
+    margin: 25px;
+    max-width: 100%;
+    height: auto;
+}

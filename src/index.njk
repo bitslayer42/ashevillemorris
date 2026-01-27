@@ -1,0 +1,14 @@
+---
+title: Asheville Morris
+layout: main
+---
+<link rel="stylesheet" href="bundle.css">
+{% for team in collections.teams %}
+    <a href="{{ team.url }}">
+    <div class="groups">
+    <h2>{{ team.data.title }}</h2>
+    <img src="{{ team.data.icon }}">
+    <div>{{ team.data.descrip}}</div>
+    </div>
+    </a>
+{% endfor %}

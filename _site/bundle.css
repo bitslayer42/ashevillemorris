@@ -4,6 +4,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    font-size: 1.2rem;
 }
 
 main {
@@ -15,7 +16,7 @@ main {
 }
 
 nav {
-    background-color: rgba(166, 178, 202, 0.5);
+    background-color: rgba(166, 178, 202, 0.8);
     padding: 10px;
     position: sticky;
     top: 0;
@@ -64,7 +65,7 @@ div.cards {
 
 article {
     width: 400px;
-    height: 450px;
+
     margin: 5px;
     padding: 20px;
     float: left;

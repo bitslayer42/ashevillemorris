@@ -10,7 +10,7 @@ descrip: Garland dancing is an English dance tradition that began in the 1800s i
 
 {% for item in pictures.garland %}
     {% if item.type == "img" %}
-        <img src="../img/{{ item.value }}">
+        <img class="gal" src="../img/{{ item.value }}">
     {% elseif item.type == "txt" %}
         <article>
             {% for text in item.value %}

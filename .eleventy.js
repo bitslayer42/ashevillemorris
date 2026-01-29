@@ -6,6 +6,9 @@ export default function(eleventyConfig) {
         mode: "html-relative"
     });
     eleventyConfig.addWatchTarget("src/bundle.css");
+    eleventyConfig.setServerOptions({
+        showAllHosts: true, // This enables access from other devices
+    });
     return {
         dir: {
             input: "src",

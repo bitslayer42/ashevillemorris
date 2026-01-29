@@ -10,7 +10,7 @@ descrip: Morris dancing is an English folk tradition. As far back as the 16th ce
 
 {% for item in pictures.morris %}
     {% if item.type == "img" %}
-        <img src="../img/{{ item.value }}">
+        <img class="gal" src="../img/{{ item.value }}">
     {% elseif item.type == "txt" %}
         <article>
             {% for text in item.value %}

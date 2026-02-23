@@ -113,7 +113,6 @@ div.cards article:hover {
 
 footer {
     display: block;
-    clear: both;
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 5px 5px #ccc;
